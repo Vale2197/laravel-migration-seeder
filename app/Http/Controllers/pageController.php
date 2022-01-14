@@ -10,6 +10,6 @@ class pageController extends Controller
     public function home() {
         $packages = Package::all();
 
-        return view('welcome');
+        return view('welcome', compact('packages'));
     }
 }
