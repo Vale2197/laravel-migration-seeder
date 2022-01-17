@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'pageController@home');
+Route::get('/', 'pageController@home')->name('home');
+
+Route::get('/{package}', 'pageController@package')->name('package');
