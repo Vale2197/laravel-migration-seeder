@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Package;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class pageController extends Controller
 {
@@ -16,8 +17,8 @@ class pageController extends Controller
 
     public function package($id) {
 
-        $packages = Package::all();
+        $package = Package::find($id);;
 
-        return view('single_package', compact('packages'));
+        return view('single_package', compact('package'));
     }
 }
