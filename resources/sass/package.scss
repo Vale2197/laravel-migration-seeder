@@ -1,0 +1,22 @@
+.main_package {
+    background-color: white;
+    min-height: 100%;
+
+    .my_jumbo {
+        width: 100%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .main {
+        button {
+            border: 1px solid black;
+        }
+    }
+}

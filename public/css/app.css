@@ -12173,7 +12173,31 @@ fieldset:disabled .btn {
   }
 }
 
-body {
+.main_package {
+  background-color: white;
+  min-height: 100%;
+}
+
+.main_package .my_jumbo {
+  width: 100%;
+  height: 300px;
+}
+
+.main_package .my_jumbo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.main_package .main button {
+  border: 1px solid black;
+}
+
+.main_welcome {
+  min-height: 100%;
   background-image: url("https://www.giardinaggio.net/giardino/piante-da-giardino/palma-pianta-_NG1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -12181,7 +12205,7 @@ body {
   color: white;
 }
 
-img {
+.main_welcome img {
   height: 300px !important;
   width: 100%;
   -o-object-fit: cover;
@@ -12190,10 +12214,15 @@ img {
   border-top-right-radius: 1rem !important;
 }
 
-.card {
+.main_welcome .card {
   height: 430px;
   color: black;
   border-radius: 1rem;
   box-shadow: 3px 4px 10px;
+}
+
+body,
+html {
+  height: 100%;
 }
 

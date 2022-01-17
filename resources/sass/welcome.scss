@@ -1,0 +1,23 @@
+.main_welcome {
+    min-height: 100%;
+    background-image: url('https://www.giardinaggio.net/giardino/piante-da-giardino/palma-pianta-_NG1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+    img {
+        height: 300px!important;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 1rem!important;
+        border-top-right-radius: 1rem!important;
+    }
+    
+    .card {
+        height: 430px;
+        color: black;
+        border-radius: 1rem;
+        box-shadow: 3px 4px 10px;
+    }
+}

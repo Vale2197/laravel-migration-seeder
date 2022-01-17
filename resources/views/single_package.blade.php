@@ -1,15 +1,28 @@
 @extends('layout.app')
-
-@section('custom_css')
-
-    <link rel="stylesheet" href="{{asset('css/package.css')}}">
-    
-@endsection
     
 @section('content')
     
+<div class="main_package">
     <div class="my_jumbo">
         <img src="{{$package->image_url}}" alt="#">
     </div>
+
+    <div class="main p-3">
+        <h1>
+            {{ $package->title }}
+        </h1>
+
+        <p>
+            {{$package->description}}
+        </p>
+        <p class="fs-2">
+            {{$package->price}} &#8364;
+        </p>
+        <button class="btn bg-warning">
+            BUY
+        </button>
+
+    </div>
+</div>
 
 @endsection
