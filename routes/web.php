@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'pageController@home')->name('home');
 
 Route::get('/{package}', 'pageController@package')->name('package');
+
+Route::get('/news', 'pageController@news')->name('news');

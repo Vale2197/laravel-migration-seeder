@@ -10,6 +10,7 @@
     </div>
 
     <div class="main p-3">
+        
         <h1>
             {{ $package->title }}
         </h1>
