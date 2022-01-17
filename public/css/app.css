@@ -12198,7 +12198,7 @@ fieldset:disabled .btn {
 
 .main_welcome {
   min-height: 100%;
-  background-image: url("https://www.giardinaggio.net/giardino/piante-da-giardino/palma-pianta-_NG1.jpg");
+  background-color: #2e2e2e;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12215,7 +12215,7 @@ fieldset:disabled .btn {
 }
 
 .main_welcome .card {
-  height: 430px;
+  height: 100%;
   color: black;
   border-radius: 1rem;
   box-shadow: 3px 4px 10px;
@@ -12224,5 +12224,16 @@ fieldset:disabled .btn {
 body,
 html {
   height: 100%;
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+header a,
+header a.nav-link {
+  color: white;
 }
 

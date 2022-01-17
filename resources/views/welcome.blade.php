@@ -17,7 +17,7 @@
             @foreach ($packages as $package)
               <div class="col-4 py-5">
             
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     @if($package->title == 'esperienza esotica')
                       <img src="https://www.my-personaltrainer.it/2020/10/30/papaya-orig.jpeg" class="card-img-top" alt="...">
                     @else 

@@ -1,5 +1,7 @@
 @extends('layout.app')
-    
+
+@section('title', 'package')
+        
 @section('content')
     
 <div class="main_package">
