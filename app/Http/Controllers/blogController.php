@@ -12,7 +12,7 @@ class blogController extends Controller
     
     public function blogs(){
 
-        $blogs = Blog::all();
+        $blogs = Blog::paginate(15);
 
         return view('blogs', compact('blogs'));
     }

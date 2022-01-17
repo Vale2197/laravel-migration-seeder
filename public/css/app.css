@@ -11286,6 +11286,11 @@ textarea.form-control-lg {
   box-shadow: 3px 4px 10px;
 }
 
+.main_blogs .card {
+  border-radius: 1rem;
+  box-shadow: 3px 3px 4px grey;
+}
+
 body, html {
   height: 100%;
 }
