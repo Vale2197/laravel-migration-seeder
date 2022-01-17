@@ -17,4 +17,4 @@ Route::get('/', 'pageController@home')->name('home');
 
 Route::get('/{package}', 'pageController@package')->name('package');
 
-Route::get('/news', 'pageController@news')->name('news');
+Route::get('/blogs', 'blogController@blogs')->name('blogs');

@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" href="{{ route('news') }}">News</a>
+                    <a class="nav-link" href="{{ route('blogs') }}">News</a>
                 </div>
             </div>
         </div>
