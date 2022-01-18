@@ -1,6 +1,13 @@
 .main_package {
-    background-color: white;
+    background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+    color: white;
     min-height: 100%;
+
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 4rem;
+        font-weight: lighter;
+    }
 
     .my_jumbo {
         width: 100%;

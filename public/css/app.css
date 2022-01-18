@@ -11244,8 +11244,14 @@ textarea.form-control-lg {
   }
 }
 .main_package {
-  background-color: white;
+  background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+  color: white;
   min-height: 100%;
+}
+.main_package h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  font-weight: lighter;
 }
 .main_package .my_jumbo {
   width: 100%;
@@ -11277,8 +11283,10 @@ textarea.form-control-lg {
 }
 .main_welcome h2 {
   padding-top: 5rem !important;
-  font-weight: bold;
+  font-weight: lighter;
   padding-bottom: 1rem !important;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
 }
 .main_welcome .container .my_pagination {
   position: absolute;
@@ -11323,10 +11331,15 @@ textarea.form-control-lg {
   background: white;
   color: black;
   border: 1px solid black;
+  transition-duration: 0.5s;
 }
 .main_welcome .container .card .btn {
   background: black;
   color: white;
+}
+.main_welcome .container .card:hover {
+  transform: scale(1.04);
+  box-shadow: 4px 6px 10px black;
 }
 
 .main_blogs {
@@ -11337,6 +11350,9 @@ textarea.form-control-lg {
 .main_blogs h2 {
   padding-top: 5rem !important;
   padding-bottom: 1rem !important;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  font-weight: lighter;
 }
 .main_blogs .card {
   border-radius: 1rem;
@@ -11403,6 +11419,17 @@ textarea.form-control-lg {
 .main_blog {
   min-height: 100%;
   background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+  color: white;
+}
+.main_blog h1 {
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+}
+.main_blog p.description {
+  color: silver;
 }
 
 body, html {

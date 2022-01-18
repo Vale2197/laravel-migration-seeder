@@ -1,4 +1,18 @@
 .main_blog {
     min-height: 100%;
     background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+    color: white;
+    
+    h1 {
+        padding-top: 5rem;
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        font-family: 'Lobster', cursive;
+        font-weight: lighter;
+    }
+
+    p.description {
+        color: rgb(192, 192, 192);
+    }
+
 }

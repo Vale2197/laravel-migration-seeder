@@ -7,7 +7,7 @@
 
 <div class="main_blogs">
     <h2 class="p-5">
-        NEWS:
+        News:
     </h2>
 
      <div class="container py-5">
