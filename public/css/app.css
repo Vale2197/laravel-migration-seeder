@@ -11329,9 +11329,60 @@ textarea.form-control-lg {
   color: white;
 }
 
+.main_blogs {
+  background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+  color: white;
+  position: relative;
+}
+.main_blogs h2 {
+  padding-top: 5rem !important;
+  padding-bottom: 1rem !important;
+}
 .main_blogs .card {
   border-radius: 1rem;
-  box-shadow: 3px 3px 4px grey;
+  box-shadow: 3px 3px 4px #242424;
+  transition-duration: 0.5s;
+  background: linear-gradient(0.5turn, #252525 10%, rgba(37, 37, 37, 0.178));
+  color: white;
+}
+.main_blogs a {
+  text-decoration: none;
+  color: black;
+}
+.main_blogs a:active {
+  color: black;
+}
+.main_blogs a:hover .card {
+  transform: scale(1.03);
+  box-shadow: 3px 6px 6px #242424;
+}
+.main_blogs .my_pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main_blogs .my_pagination ul {
+  margin: 0;
+}
+.main_blogs .my_pagination a.page-link {
+  background: none !important;
+  border: none !important;
+  margin: none !important;
+  color: white;
+}
+.main_blogs .my_pagination .page-item.active .page-link {
+  z-index: 3;
+  color: white;
+  background: linear-gradient(0.5turn, #000000 10%, #0000001f);
+  border: none;
+  border-radius: 3px;
+}
+.main_blogs .my_pagination .page-item.disabled .page-link {
+  color: white;
+  pointer-events: none;
+  background: linear-gradient(0.5turn, #000000 10%, #0000001f);
+  border: none;
+  border-radius: 3px;
 }
 
 .main_home {
@@ -11347,6 +11398,11 @@ textarea.form-control-lg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.main_blog {
+  min-height: 100%;
+  background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
 }
 
 body, html {

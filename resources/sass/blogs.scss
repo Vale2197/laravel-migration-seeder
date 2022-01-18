@@ -1,7 +1,65 @@
 .main_blogs {
+   background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+   color: white;
+   position: relative;
+
+   h2 {
+    padding-top: 5rem!important;
+    padding-bottom: 1rem!important;
+   }
     .card {
         border-radius: 1rem;
-        box-shadow: 3px 3px 4px grey;
+        box-shadow: 3px 3px 4px rgb(36, 36, 36);
+        transition-duration: 0.5s;
+        background: linear-gradient(0.50turn, #252525 10%, rgba(37, 37, 37, 0.178));
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:active {
+            color: black
+        }
+
+        &:hover .card{
+            transform: scale(1.03);
+            box-shadow: 3px 6px 6px rgb(36, 36, 36);
+        }
+    }
+
+    .my_pagination {
+        position: absolute;
+            bottom: 0;
+            left: 0;
+            ul {
+                margin: 0;
+            }
+    
+            a.page-link {
+                background: none!important;
+                border: none!important;
+                margin: none!important;
+                color: white;
+            }
+    
+            .page-item.active .page-link {
+                z-index: 3;
+                color: white;
+                background: linear-gradient(0.50turn, #000000 10%, #0000001f);
+                border: none; 
+                border-radius: 3px;
+            }
+    
+            .page-item.disabled .page-link {
+                color: white;
+                pointer-events: none;
+                background: linear-gradient(0.50turn, #000000 10%, #0000001f);
+                border: none;
+                border-radius: 3px;
+    
+            }
     }
 }
 
