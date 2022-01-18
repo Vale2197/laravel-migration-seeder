@@ -1,14 +1,14 @@
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Navbar</a>
+            <a class="welcome navbar-brand" href="{{route('home')}}">Welcome</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" href="{{ route('blogs') }}">News</a>
+                    <a class="nav-link" aria-current="page" href="{{route('packages')}}">I nostri pacchetti viaggio</a>
+                    <a class="nav-link" href="{{ route('blogs') }}">Blog</a>
                 </div>
             </div>
         </div>

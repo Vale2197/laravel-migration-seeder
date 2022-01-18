@@ -1,0 +1,16 @@
+.main_home {
+    min-height: 100%;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+
+    h1 {
+
+        font-size: 9rem!important;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

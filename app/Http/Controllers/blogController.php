@@ -5,15 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 
-class blogController extends Controller
+class BlogController extends Controller
 {
     //
 
     
-    public function blogs(){
+    public function index(){
 
         $blogs = Blog::paginate(15);
 
-        return view('blogs', compact('blogs'));
+        return view('blog.index', compact('blogs'));
+    }
+
+    public function show($id){
+
+        $blog = Blog::find($id);
+
+        return view('blog.show', compact('blog'));
     }
 }

@@ -1,0 +1,76 @@
+.main_welcome {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    background-color: rgb(51, 51, 51);
+
+    h2 {
+        padding-top: 5rem!important;
+        font-weight: bold;
+        padding-bottom: 1rem!important;
+    }
+
+
+    .container {
+        
+        .my_pagination {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            ul {
+                margin: 0;
+            }
+    
+            a.page-link {
+                background: none!important;
+                border: none!important;
+                margin: none!important;
+                color: white;
+            }
+    
+            .page-item.active .page-link {
+                z-index: 3;
+                color: white;
+                background: linear-gradient(0.50turn, #000000 10%, #0000001f);
+                border: none; 
+                border-radius: 3px;
+            }
+    
+            .page-item.disabled .page-link {
+                color: white;
+                pointer-events: none;
+                background: linear-gradient(0.50turn, #000000 10%, #0000001f);
+                border: none;
+                border-radius: 3px;
+    
+            }
+        }
+        
+        img {
+            height: 300px!important;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 1rem!important;
+            border-top-right-radius: 1rem!important;
+        }
+        
+        .card {
+         
+            height: 100%;
+            border-radius: 1rem;
+            box-shadow: 3px 4px 10px black;
+            background: white;
+            color: black;
+            border: 1px solid black;
+
+            .btn {
+                background: black;
+                color: white;
+            }
+        }
+    }
+
+}

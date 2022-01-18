@@ -15,6 +15,10 @@ class CreatePackagesTable extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->double('price', 10, 2);
+            $table->text('description');
+            $table->text('image_url');
             $table->timestamps();
         });
         

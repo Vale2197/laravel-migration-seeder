@@ -21,7 +21,7 @@
         <p class="fs-2">
             {{$package->price}} &#8364;
         </p>
-        <button class="btn bg-warning">
+        <button class="btn">
             BUY
         </button>
 

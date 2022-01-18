@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);@charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11260,18 +11260,55 @@ textarea.form-control-lg {
      object-position: center;
 }
 .main_package .main button {
-  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
+/* font-family: 'Lobster', cursive; */
 .main_welcome {
   min-height: 100%;
-  background-color: #2e2e2e;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
+  position: relative;
+  background-color: #333333;
 }
-.main_welcome img {
+.main_welcome h2 {
+  padding-top: 5rem !important;
+  font-weight: bold;
+  padding-bottom: 1rem !important;
+}
+.main_welcome .container .my_pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main_welcome .container .my_pagination ul {
+  margin: 0;
+}
+.main_welcome .container .my_pagination a.page-link {
+  background: none !important;
+  border: none !important;
+  margin: none !important;
+  color: white;
+}
+.main_welcome .container .my_pagination .page-item.active .page-link {
+  z-index: 3;
+  color: white;
+  background: linear-gradient(0.5turn, #000000 10%, #0000001f);
+  border: none;
+  border-radius: 3px;
+}
+.main_welcome .container .my_pagination .page-item.disabled .page-link {
+  color: white;
+  pointer-events: none;
+  background: linear-gradient(0.5turn, #000000 10%, #0000001f);
+  border: none;
+  border-radius: 3px;
+}
+.main_welcome .container img {
   height: 300px !important;
   width: 100%;
   -o-object-fit: cover;
@@ -11279,11 +11316,17 @@ textarea.form-control-lg {
   border-top-left-radius: 1rem !important;
   border-top-right-radius: 1rem !important;
 }
-.main_welcome .card {
+.main_welcome .container .card {
   height: 100%;
-  color: black;
   border-radius: 1rem;
-  box-shadow: 3px 4px 10px;
+  box-shadow: 3px 4px 10px black;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+.main_welcome .container .card .btn {
+  background: black;
+  color: white;
 }
 
 .main_blogs .card {
@@ -11291,14 +11334,36 @@ textarea.form-control-lg {
   box-shadow: 3px 3px 4px grey;
 }
 
+.main_home {
+  min-height: 100%;
+  font-family: "Lobster", cursive;
+  position: relative;
+  background: linear-gradient(0.25turn, #6e6e6e 10%, #252525);
+}
+.main_home h1 {
+  font-size: 9rem !important;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body, html {
   height: 100%;
 }
 
 header {
-  background-color: black;
+  background: linear-gradient(0.5turn, #000000 10%, rgba(0, 0, 0, 0.123));
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   color: white;
   font-weight: bold;
+}
+header .welcome {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
 }
 header a, header a.nav-link {
   color: white;

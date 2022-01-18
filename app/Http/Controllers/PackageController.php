@@ -8,20 +8,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
-class pageController extends Controller
+class PackageController extends Controller
 {
-    public function home() {
+    public function index() {
         
         $packages = Package::paginate(3);
 
-        return view('welcome', compact('packages'));
+        return view('package.index', compact('packages'));
     }
 
-    public function package($id) {
+    public function show($id) {
 
         $package = Package::find($id);
 
-        return view('singlePackage', compact('package'));
+        return view('package.show', compact('package'));
     }
 
 }

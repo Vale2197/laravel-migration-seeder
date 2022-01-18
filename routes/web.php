@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'pageController@home')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/package/{package}', 'pageController@package')->name('package');
+Route::get('/packages', 'PackageController@index')->name('packages');
 
-Route::get('/blogs', 'blogController@blogs')->name('blogs');
+Route::get('/package/{package}', 'PackageController@show')->name('package');
+
+Route::get('/blogs', 'blogController@index')->name('blogs');
+
+Route::get('/blog/{id}', 'blogController@show')->name('blog');

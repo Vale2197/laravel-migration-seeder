@@ -2,17 +2,29 @@
 
 @import 'package.scss';
 
-@import 'welcome.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import 'packages.scss';
 @import 'blogs.scss';
+@import 'home.scss';
 
 body, html {
     height: 100%;
 }
 
 header {
-    background-color: black;
+    background: linear-gradient(0.50turn, #000000 10%, rgba(0, 0, 0, 0.123));
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     color: white;
     font-weight: bold;
+
+    .welcome {
+         font-family: 'Lobster', cursive; 
+         font-weight: lighter;
+        
+    }
 
     a, a.nav-link {
         color: white;

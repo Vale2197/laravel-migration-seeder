@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPackageImageTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class AddPackageImageTable extends Migration
      */
     public function up()
     {
-        Schema::table('packages', function (Blueprint $table) {
-             $table->text('image_url');
+        Schema::create('blogs', function (Blueprint $table) {
+            $table->id();
+            $table->string('title', 200);
+            $table->text('description');
+            $table->text('text');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ class AddPackageImageTable extends Migration
      */
     public function down()
     {
-        Schema::table('packages', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('blogs');
     }
 }
